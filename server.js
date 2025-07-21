@@ -34,7 +34,7 @@ app.get('/api/v1/test', (req, res) => {
 });
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-app.use(express.static(path.resolve(__dirname, './public')));
+app.use(express.static(path.resolve(__dirname, './client/dist')));
 
 app.use(cookieParser());
 app.use(errorHandlerMiddleware);
